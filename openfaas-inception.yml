@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  openfaas-inception:
+    lang: python3
+    handler: ./openfaas-inception
+    image: servernull/openfaas-inception:latest
+
