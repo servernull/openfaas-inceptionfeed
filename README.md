@@ -1,6 +1,6 @@
 # openfaas-inceptionfeed
 
-An [openfaas](https://www.openfaas.com/) function that takes an array of image URLs, and calls [inception](https://github.com/faas-and-furious/inception-function) on them.
+An [openfaas](https://www.openfaas.com/) function that takes an array of image URLs, and calls an [inception](https://github.com/faas-and-furious/inception-function) classification model on them.
 
 ```bash
 echo '["http://scottleedavis.com/assets/img/scott.jpeg"]' | faas-cli invoke openfaas-inceptionfeed | jq
