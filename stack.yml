@@ -2,8 +2,11 @@ version: 1.0
 provider:
   name: openfaas
 functions:
-  openfaas-inception:
+  openfaas-inceptionfeed:
     lang: python3
-    handler: ./openfaas-inception
-    image: servernull/openfaas-inception:0.1.0
-
+    handler: ./openfaas-inceptionfeed
+    image: servernull/openfaas-inceptionfeed:0.1.0
+    environment:
+      read_timeout: 660
+      write_timeout: 660
+      exec_timeout: 660
